@@ -15,9 +15,9 @@ RUN npm config set unsafe-perm true
 
 RUN npm install -g typescript
 
-RUN mkdir /bot/src
+RUN mkdir /bot
 RUN chmod 777 /bot
-WORKDIR /bot/src
+WORKDIR /bot
 
 RUN git clone -b master https://github.com/anoxdleo/NodeJsBot.git /bot
 
